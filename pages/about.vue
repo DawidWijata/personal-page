@@ -1,4 +1,3 @@
-<style lang="scss" scoped></style>
 <template>
     <div>
         <h2>About</h2>

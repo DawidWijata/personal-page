@@ -1,47 +1,47 @@
 <template>
     <section class="introduction">
-        <h3>About me</h3>
+        <h3 class="introduction__header">About me</h3>
         <p v-for="paragraph in $tm('introduction.paragraphs')">
             {{ $rt(paragraph) }}
         </p>
-        <ul>
-            <a v-for="socialLink in $tm('introduction.socialLinks')" :href="$rt(socialLink.link)" target="_blank"
-                ref="noreferrer nofollow">
-                <li>
+        <ul class="introduction__icon-list">
+            <a class="introduction__social-link" v-for="socialLink in $tm('introduction.socialLinks')"
+                :href="$rt(socialLink.link)" target="_blank" ref="noreferrer nofollow">
+                <li class="introduction__icon-list-item">
                     <Icon :name="$rt(socialLink.iconName)" size="2rem" />
                     <p>{{ $rt(socialLink.display) }}</p>
                 </li>
             </a>
         </ul>
-        <a :href="$t('introduction.cvLink')" target="_blank" ref="nofollow noreferrer">
+        <a class="introduction__cv-link" :href="$t('introduction.cvLink')" target="_blank" ref="nofollow noreferrer">
             <UiButton :name="$t('introduction.cvButtonName')" />
         </a>
     </section>
 </template>
 
 <style scoped>
-section {
+.introduction {
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
 }
 
-ul {
+.introduction__icon-list {
     margin: 0.7rem 0;
 }
 
-a {
+.introduction__social-link {
     display: block;
     width: fit-content;
 }
 
-li {
+.introduction__icon-list-item {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
 }
 
-li p {
+.introduction__icon-list-item p {
     margin-left: 1.2rem;
 }
 </style>
