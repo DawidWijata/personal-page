@@ -1,112 +1,31 @@
 <template>
     <section class="projects">
         <h3>Projects</h3>
-        <UiCard v-for="project in projects.reverse()" class="project">
+        <UiCard v-for="project in $tm('projects')" class="project">
             <div class="project__title-row">
-                <h4>{{ project.name }}</h4>
+                <h4>{{ $rt(project.name) }}</h4>
                 <ul class="project__links">
                     <li v-for="link in project.links">
-                        <a :href="link.url">
-                            <Icon :name="'mdi:' + link.icon" size="1.2rem" />
+                        <a :href="$rt(link.url)">
+                            <Icon :name="$rt(link.icon)" size="1.2rem" />
                         </a>
                     </li>
                 </ul>
             </div>
             <p class="project__date">
-                {{ project.dateStart }} - {{ project?.dateEnd ?? 'now' }}
+                {{ $rt(project.dateStart) }} - {{ project?.dateEnd ?? 'now' }}
             </p>
             <ul class="project__tags">
                 <li v-for="techItem in project.tech" class="project__tag">
-                    {{ techItem }}
+                    {{ $rt(techItem) }}
                 </li>
             </ul>
             <p class="project__description">
-                {{ project.description }}
+                {{ $rt(project.description) }}
             </p>
         </UiCard>
     </section>
 </template>
-
-<script setup lang="ts">
-const projects = reactive([
-    {
-        name: 'Project 1',
-        dateStart: '01.01.2022',
-        dateEnd: null,
-        links: [
-            {
-                icon: 'github',
-                url: '#'
-            },
-            {
-                icon: 'web',
-                url: '#'
-            },
-        ],
-        tech: ['.NET', 'Angular', 'Single SPA', 'EF Core'],
-        description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem
-                praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque
-                magnam quidem natus.`
-    },
-    {
-        name: 'Project 2',
-        dateStart: '01.01.2022',
-        dateEnd: '01.01.2022',
-        links: [
-            {
-                icon: 'github',
-                url: '#'
-            },
-            {
-                icon: 'web',
-                url: '#'
-            },
-        ],
-        tech: ['.NET', 'Angular', 'Single SPA', 'EF Core'],
-        description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem
-                praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque
-                magnam quidem natus.`
-    },
-    {
-        name: 'Project 3',
-        dateStart: '01.01.2022',
-        dateEnd: '01.01.2022',
-        links: [
-            {
-                icon: 'github',
-                url: '#'
-            },
-            {
-                icon: 'web',
-                url: '#'
-            },
-        ],
-        tech: ['.NET', 'Angular', 'Single SPA', 'EF Core'],
-        description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem
-                praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque
-                magnam quidem natus.`
-    },
-    {
-        name: 'Project 4',
-        dateStart: '01.01.2022',
-        dateEnd: '01.01.2022',
-        links: [
-            {
-                icon: 'github',
-                url: '#'
-            },
-            {
-                icon: 'web',
-                url: '#'
-            },
-        ],
-        tech: ['.NET', 'Angular', 'Single SPA', 'EF Core'],
-        description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem
-                praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque
-                magnam quidem natus.`
-    },
-]);
-</script>
 
 <style scoped>
 .projects {

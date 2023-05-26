@@ -4,29 +4,19 @@
             <img src="img/personal-photo.png" alt="&nbsp;" class="about-me__photo">
             <div class="about-me__content">
                 <h2 class="about-me__name">
-                    {{ data.name }}
+                    {{ $t('headline.name') }}
                 </h2>
                 <p class="about-me__title">
-                    {{ data.title }}
+                    {{ $t('headline.title') }}
                 </p>
                 <span class="spacer"></span>
                 <p class="about-me__description">
-                    {{ data.description }}
+                    {{ $t('headline.description') }}
                 </p>
             </div>
         </div>
     </section>
 </template>
-
-<script setup>
-const data = reactive({
-    name: 'Dawid Wijata',
-    title: 'Fullstack Developer',
-    description: `I'm a Fullstack Developer located in Warsaw, Poland.
-                    I specialize in developing web applications using Angular & .NET.
-                    I'm also interested in frontend architecture and microfrontends concept.`
-});
-</script>
 
 <style scoped>
 .about-me {
