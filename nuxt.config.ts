@@ -28,7 +28,7 @@ export default defineNuxtConfig({
                 name: 'Polski (PL)'
             }
         ],
-        strategy: 'prefix_and_default',
+        strategy: 'prefix',
         langDir: './lang'
-    }
+    },
 })

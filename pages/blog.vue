@@ -9,8 +9,10 @@
     </div>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+useHead({
+    title: 'Dawid Wijata | Blog',
+});
 </script>
 
 <style lang="scss" scoped></style>

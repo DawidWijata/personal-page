@@ -1,6 +1,8 @@
 <template>
     <section class="introduction">
-        <h3 class="introduction__header">About me</h3>
+        <h3 class="introduction__header">
+            {{ $t('introduction.headline') }}
+        </h3>
         <p v-for="paragraph in $tm('introduction.paragraphs')">
             {{ $rt(paragraph) }}
         </p>

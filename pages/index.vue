@@ -1,8 +1,12 @@
 <template>
-    <AboutHeadline />
-    <AboutIntroduction />
-    <AboutExperience />
-    <AboutProjects />
+    <div>
+        <h2>Main page</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, minima maiores. Suscipit labore pariatur
+            corporis reprehenderit eveniet ab deserunt aperiam, in sequi praesentium mollitia quaerat eaque atque!
+            Repellendus, reiciendis neque!
+        </p>
+    </div>
 </template>
  
 <script setup lang="ts">
@@ -11,23 +15,4 @@ useHead({
 });
 </script>
 
-<style>
-section {
-    max-width: 60rem;
-    padding: 3rem 1.5rem;
-    margin: 0 auto;
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-h3 {
-    padding-bottom: 0.5rem;
-    padding-right: 1.5rem;
-    border-bottom: 0.15rem var(--green) solid;
-    width: fit-content;
-    font-size: 1.6rem;
-}
-</style>
+<style></style>

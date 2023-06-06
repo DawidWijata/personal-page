@@ -1,7 +1,9 @@
 <template>
     <section class="projects">
-        <h3>Projects</h3>
-        <UiCard v-for="project in $tm('projects')" class="project">
+        <h3>
+            {{ $t('projects.headline') }}
+        </h3>
+        <UiCard v-for="project in $tm('projects.items')" class="project">
             <div class="project__title-row">
                 <h4>{{ $rt(project.name) }}</h4>
                 <ul class="project__links">
@@ -13,7 +15,7 @@
                 </ul>
             </div>
             <p class="project__date">
-                {{ $rt(project.dateStart) }} - {{ project?.dateEnd ?? 'now' }}
+                {{ $rt(project.dateStart) }} - {{ project?.dateEnd ?? $t('words.now') }}
             </p>
             <ul class="project__tags">
                 <li v-for="techItem in project.tech" class="project__tag">

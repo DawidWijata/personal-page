@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <img src="img/logo.svg" alt="Dawid Wijata">
+        <img src="/img/logo.svg" alt="Dawid Wijata">
         <p>@ {{ year }} Dawid Wijata</p>
         <p>All rights reserved</p>
     </footer>
@@ -15,7 +15,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.2rem 0.8rem;
+    padding: 1.8rem 0.8rem;
 }
 
 img {

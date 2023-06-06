@@ -1,7 +1,7 @@
 <template>
     <section class="about-me">
         <div class="about-me__container">
-            <img src="img/personal-photo.png" alt="&nbsp;" class="about-me__photo">
+            <img src="/img/personal-photo.png" alt="&nbsp;" class="about-me__photo">
             <div class="about-me__content">
                 <h2 class="about-me__name">
                     {{ $t('headline.name') }}

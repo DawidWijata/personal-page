@@ -2,16 +2,20 @@
     <header class="header" @mouseleave="closeLanguageMenu">
         <div class="header__container">
             <h1 class="header__headline">
-                <NuxtLink to="/">
-                    <img src="img/logo.svg" alt="Dawid Wijata">
+                <NuxtLink :to="localizedRoute('')">
+                    <img src="/img/logo.svg" alt="Dawid Wijata">
                 </NuxtLink>
             </h1>
             <ul class="header__outer-menu">
                 <li>
-                    <NuxtLink to="/about">About</NuxtLink>
+                    <NuxtLink :to="localizedRoute('about')">
+                        {{ $t('menu.about') }}
+                    </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/blog">Blog</NuxtLink>
+                    <NuxtLink :to="localizedRoute('blog')">
+                        {{ $t('menu.blog') }}
+                    </NuxtLink>
                 </li>
                 <li>
                     <label class="header__language-button">
@@ -19,10 +23,10 @@
                         <input hidden type="checkbox" v-model="languageMenuExpanded">
                     </label>
                     <ul v-if="languageMenuExpanded" class="header__inner-menu">
-                        <li class="header__inner-menu-item" v-for="locale in $i18n.availableLocales">
-                            <NuxtLink :to="locale" @click="closeLanguageMenu">
-                                <Icon :name="'flagpack:' + locale" size="2rem" />
-                                <p>{{ locale }}</p>
+                        <li class="header__inner-menu-item" v-for="locale in availableLocales">
+                            <NuxtLink :to="switchLocalePath(locale.code)" @click="closeLanguageMenu">
+                                <Icon :name="'flagpack:' + locale.code" size="2rem" />
+                                <p>{{ locale.code }}</p>
                             </NuxtLink>
                         </li>
                     </ul>
@@ -33,10 +37,19 @@
 </template>
 
 <script setup lang="ts">
+const { locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 const languageMenuExpanded = ref(false);
+
+const availableLocales = computed(() => locales.value as any);
+
 
 function closeLanguageMenu(): void {
     languageMenuExpanded.value = false;
+}
+
+function localizedRoute(slug: string): string {
+    return `/${locale.value}/${slug}`;
 }
 </script>
 
@@ -90,6 +103,7 @@ img {
     column-gap: 0.75rem;
     list-style-type: none;
     position: relative;
+    margin-right: 1rem;
 }
 
 .header__inner-menu {
