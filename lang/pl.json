@@ -27,8 +27,8 @@
             },
             {
                 "iconName": "mdi:email",
-                "link": "mailto:kontakt(at)dawidwijata.pl",
-                "display": "kontakt(at)dawidwijata.pl"
+                "link": "mailto:kontakt{'@'}dawidwijata.pl",
+                "display": "kontakt{'@'}dawidwijata.pl"
             },
             {
                 "iconName": "mdi:twitter",

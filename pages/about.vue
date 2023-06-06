@@ -2,7 +2,7 @@
     <AboutHeadline />
     <AboutIntroduction />
     <AboutExperience />
-    <AboutProjects />
+    <!-- <AboutProjects /> -->
 </template>
  
 <script setup lang="ts">

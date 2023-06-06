@@ -11,7 +11,9 @@
                 :href="$rt(socialLink.link)" target="_blank" ref="noreferrer nofollow">
                 <li class="introduction__icon-list-item">
                     <Icon :name="$rt(socialLink.iconName)" size="2rem" />
-                    <p>{{ $rt(socialLink.display) }}</p>
+                    <p>
+                        {{ $rt(socialLink.display) }}
+                    </p>
                 </li>
             </a>
         </ul>
