@@ -19,8 +19,10 @@
                 <td>525424156</td>
             </tr>
             <tr>
-                <td><strong>Adres:</strong></td>
-                <td>ul. 1 Maja 54, 96-300 Żyrardów</td>
+                <td class="address-cell">
+                    <strong>{{ $t('words.address') }}:</strong>
+                </td>
+                <td>1 Maja 54, 96-300 Żyrardów</td>
             </tr>
         </table>
     </footer>
@@ -64,6 +66,10 @@ td {
     row-gap: 0.8rem;
     flex-direction: column;
     text-align: center;
+}
+
+.address-cell {
+    text-transform: capitalize;
 }
 
 @media (min-width: 768px) {
