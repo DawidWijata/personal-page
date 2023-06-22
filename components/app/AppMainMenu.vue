@@ -3,14 +3,16 @@
     <ul>
         <li v-for="link in links" @click="close">
             <NuxtLink :to="localizedRoute(link)">
-                {{ $t(`menu["${link}"]`) }}
+                {{ t(`menu["${link}"]`) }}
             </NuxtLink>
         </li>
     </ul>
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
 const { locale } = useI18n();
+
 const expanded = ref(true);
 const links = ref(['', 'blog']);
 

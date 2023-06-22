@@ -20,7 +20,7 @@
             </tr>
             <tr>
                 <td class="address-cell">
-                    <strong>{{ $t('words.address') }}:</strong>
+                    <strong>{{ t('words.address') }}:</strong>
                 </td>
                 <td>1 Maja 54, 96-300 Żyrardów</td>
             </tr>
@@ -28,7 +28,8 @@
     </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const { t } = useI18n();
 const year = new Date().getFullYear();
 </script>
 

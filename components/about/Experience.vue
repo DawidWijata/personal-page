@@ -1,23 +1,27 @@
 <template>
     <section class="experience">
-        <h3>{{ $t('experience.headline') }}</h3>
+        <h3>{{ t('experience.headline') }}</h3>
         <ul class="experience__jobs">
-            <li v-for="job in $tm('experience.positions')" class="job">
+            <li v-for="job in tm('experience.positions')" class="job">
                 <h4>
-                    {{ $rt(job.position) }}
-                    <span>@{{ $rt(job.company) }}</span>
+                    {{ rt(job.position) }}
+                    <span>@{{ rt(job.company) }}</span>
                 </h4>
-                <p>{{ job.yearStart }} - {{ job.yearEnd ?? $t('words.now') }}</p>
+                <p>{{ job.yearStart }} - {{ job.yearEnd ?? t('words.now') }}</p>
                 <ul class="job__duties">
                     <li v-for="duty in job.duties" class="job__duty">
                         <Icon name="mdi:checkbox-multiple-marked" size="1.3rem" color="#8bde7d" />
-                        <p>{{ $rt(duty) }}</p>
+                        <p>{{ rt(duty) }}</p>
                     </li>
                 </ul>
             </li>
         </ul>
     </section>
 </template>
+
+<script setup lang="ts">
+const { tm, rt, t } = useI18n()
+</script>
 
 <style scoped>
 .experience {

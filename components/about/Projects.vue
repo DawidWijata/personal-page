@@ -1,33 +1,37 @@
 <template>
     <section class="projects">
         <h3>
-            {{ $t('projects.headline') }}
+            {{ t('projects.headline') }}
         </h3>
-        <UiCard v-for="project in $tm('projects.items')" class="project">
+        <UiCard v-for="project in tm('projects.items')" class="project">
             <div class="project__title-row">
-                <h4>{{ $rt(project.name) }}</h4>
+                <h4>{{ rt(project.name) }}</h4>
                 <ul class="project__links">
                     <li v-for="link in project.links">
-                        <a :href="$rt(link.url)">
-                            <Icon :name="$rt(link.icon)" size="1.2rem" />
+                        <a :href="rt(link.url)">
+                            <Icon :name="rt(link.icon)" size="1.2rem" />
                         </a>
                     </li>
                 </ul>
             </div>
             <p class="project__date">
-                {{ $rt(project.dateStart) }} - {{ project?.dateEnd ?? $t('words.now') }}
+                {{ rt(project.dateStart) }} - {{ project?.dateEnd ?? t('words.now') }}
             </p>
             <ul class="project__tags">
                 <li v-for="techItem in project.tech" class="project__tag">
-                    {{ $rt(techItem) }}
+                    {{ rt(techItem) }}
                 </li>
             </ul>
             <p class="project__description">
-                {{ $rt(project.description) }}
+                {{ rt(project.description) }}
             </p>
         </UiCard>
     </section>
 </template>
+
+<script setup lang="ts">
+const { tm, rt, t } = useI18n();
+</script>
 
 <style scoped>
 .projects {

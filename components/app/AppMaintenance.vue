@@ -1,8 +1,12 @@
 <template>
     <section>
-        <h2>{{ $t('words.underConstruction') }}</h2>
+        <h2>{{ t('words.underConstruction') }}</h2>
     </section>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <style scoped>
 section {

@@ -1,27 +1,31 @@
 <template>
     <section class="introduction">
         <h3 class="introduction__header">
-            {{ $t('introduction.headline') }}
+            {{ t('introduction.headline') }}
         </h3>
-        <p v-for="paragraph in $tm('introduction.paragraphs')">
-            {{ $rt(paragraph) }}
+        <p v-for="paragraph in tm('introduction.paragraphs')">
+            {{ rt(paragraph) }}
         </p>
         <ul class="introduction__icon-list">
-            <a class="introduction__social-link" v-for="socialLink in $tm('introduction.socialLinks')"
-                :href="$rt(socialLink.link)" target="_blank" ref="noreferrer nofollow">
+            <a class="introduction__social-link" v-for="socialLink in tm('introduction.socialLinks')"
+                :href="rt(socialLink.link)" target="_blank" ref="noreferrer nofollow">
                 <li class="introduction__icon-list-item">
-                    <Icon :name="$rt(socialLink.iconName)" size="2rem" />
+                    <Icon :name="rt(socialLink.iconName)" size="2rem" />
                     <p>
-                        {{ $rt(socialLink.display) }}
+                        {{ rt(socialLink.display) }}
                     </p>
                 </li>
             </a>
         </ul>
-        <a class="introduction__cv-link" :href="$t('introduction.cvLink')" target="_blank" ref="nofollow noreferrer">
-            <UiButton :name="$t('introduction.cvButtonName')" />
+        <a class="introduction__cv-link" :href="t('introduction.cvLink')" target="_blank" ref="nofollow noreferrer">
+            <UiButton :name="t('introduction.cvButtonName')" />
         </a>
     </section>
 </template>
+
+<script setup lang="ts">
+const { tm, rt, t } = useI18n();
+</script>
 
 <style scoped>
 .introduction {
