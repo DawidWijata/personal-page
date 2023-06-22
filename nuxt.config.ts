@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     ],
     googleFonts: {
         families: {
-            'Jost': [400, 500, 600, 700],
+            'Jost': [300, 400, 500, 600, 700],
         },
     },
     i18n: {
@@ -19,13 +19,13 @@ export default defineNuxtConfig({
                 code: 'us',
                 iso: 'en-US',
                 file: 'us.json',
-                name: 'English (ENG)'
+                name: 'English'
             },
             {
                 code: 'pl',
                 iso: 'pl-PL',
                 file: 'pl.json',
-                name: 'Polski (PL)'
+                name: 'Polski'
             }
         ],
         strategy: 'prefix',

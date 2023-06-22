@@ -4,7 +4,7 @@
         <li v-for="locale in availableLocales">
             <NuxtLink :to="switchLocalePath(locale.code)" @click="close">
                 <Icon :name="'flagpack:' + locale.code" size="2rem" />
-                <p>{{ locale.code }}</p>
+                <p>{{ locale.name }}</p>
             </NuxtLink>
         </li>
     </ul>
@@ -25,12 +25,13 @@ function close(): void {
 <style scoped>
 ul {
     display: flex;
+    visibility: hidden;
     flex-direction: column;
     row-gap: 0.75rem;
 
     position: absolute;
     top: 2.5rem;
-    transform: translate(-4rem, -0.1rem);
+    transform: translate(-5rem, -0.1rem);
     opacity: 0;
     padding: 1rem;
     background: linear-gradient(to right bottom,
@@ -50,12 +51,9 @@ a {
     font-weight: 600;
 }
 
-li {
-    text-transform: uppercase;
-}
-
 .language-button:has(input:checked)~ul {
-    transform: translate(-4rem, 0.2rem);
+    visibility: visible;
+    transform: translate(-5rem, 0.2rem);
     opacity: 1;
 }
 </style>

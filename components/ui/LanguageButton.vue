@@ -35,14 +35,15 @@ label:after {
     height: 0;
     width: 0;
 
+    transform: rotate(0);
     border-top: 0.3rem var(--text-primary-color) solid;
     border-bottom: 0;
     border-left: 0.2rem transparent solid;
     border-right: 0.2rem transparent solid;
+    transition: transform 0.2s linear;
 }
 
 label:has(input:checked):after {
-    border-bottom: 0.3rem var(--text-primary-color) solid;
-    border-top: 0;
+    transform: rotate(-180deg);
 }
 </style>

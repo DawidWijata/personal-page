@@ -41,6 +41,7 @@ ul {
 
     transform-origin: 0% 0%;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    font-weight: 600;
 }
 
 li {

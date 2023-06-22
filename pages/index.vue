@@ -14,7 +14,7 @@ useHead({
 <style>
 section {
     max-width: 60rem;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
     margin: 0 auto;
 }
 

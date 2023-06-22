@@ -9,7 +9,7 @@
     --text-secondary-color: #c5c3c3;
 
     --primary-background-color: #191c1e;
-    --secondary-background-color: #323232;
+    --secondary-background-color: #1e2124;
 
     --green: #8bde7d;
     --green-overlay: #8cde7d49;
@@ -29,7 +29,6 @@ a {
     text-decoration: none;
     color: var(--text-primary-color);
     cursor: pointer;
-    font-weight: 600;
 }
 
 a.router-link-exact-active {
