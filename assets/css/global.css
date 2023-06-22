@@ -12,6 +12,7 @@
     --secondary-background-color: #323232;
 
     --green: #8bde7d;
+    --green-overlay: #8cde7d49;
 }
 
 body {
@@ -20,10 +21,19 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+body:has(.header__hamburger-button input:checked) {
+    overflow: hidden !important;
+}
+
 a {
     text-decoration: none;
     color: var(--text-primary-color);
     cursor: pointer;
+    font-weight: 600;
+}
+
+a.router-link-exact-active {
+    color: var(--green);
 }
 
 label {

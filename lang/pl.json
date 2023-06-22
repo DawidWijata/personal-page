@@ -1,6 +1,6 @@
 {
     "menu": {
-        "about": "O mnie",
+        "": "O mnie",
         "blog": "Blog"
     },
     "headline": {
@@ -11,7 +11,7 @@
     "introduction": {
         "headline": "O mnie",
         "paragraphs": [
-            "Jestem full-stack developerem z ponad 2-letnim doświadczeniem. Specjalizuję się w tworzeniu aplikacji webowych przy użyciu Angulara i .NET. Lubię tworzyć rozwiązania wartościowe dla społeczeństwa. Pracowałem już przy 4 projektach aplikacji, głównie z branży automotive oraz podatkowo-finansowej.",
+            "Jestem programistą Fullstack z ponad 2-letnim doświadczeniem. Specjalizuję się w tworzeniu aplikacji webowych przy użyciu Angulara i .NET. Lubię tworzyć rozwiązania wartościowe dla społeczeństwa. Pracowałem już przy 4 projektach aplikacji, głównie z branży automotive oraz podatkowo-finansowej.",
             "Poza typowymi obowiązkami developera, zajmuję się propagowaniem wiedzy w zakresie architektury frontendu oraz koncepcji mikrofrontendów. Głównymi wartościami dla mnie są ludzie, ciągły rozwój i otwartość na wiedzę."
         ],
         "socialLinks": [
@@ -40,7 +40,7 @@
         "cvButtonName": "Pobierz CV"
     },
     "experience": {
-        "headline": "Doświadczenie zawodowe",
+        "headline": "Doświadczenie",
         "positions": [
             {
                 "position": "Fullstack .NET Developer",

@@ -21,7 +21,7 @@
 <style scoped>
 .about-me {
     min-height: 100vh;
-    padding: 0 1rem;
+    padding: 4rem 1rem;
 
     display: flex;
     flex-direction: column;

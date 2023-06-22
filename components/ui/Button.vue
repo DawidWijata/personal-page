@@ -17,5 +17,10 @@ button {
     text-transform: uppercase;
     border: 0.1rem var(--green) solid;
     border-radius: 0.2rem;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: var(--green-overlay);
 }
 </style>
