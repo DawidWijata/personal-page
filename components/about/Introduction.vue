@@ -24,7 +24,29 @@
 </template>
 
 <script setup lang="ts">
+import { gsap } from 'gsap';
+
 const { tm, rt, t } = useI18n();
+
+onMounted(() => {
+    gsap.fromTo(
+        `.introduction > *`,
+        {
+            x: -20,
+            opacity: 0,
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.3,
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: `.introduction`,
+                start: "40% bottom",
+            },
+        }
+    );
+});
 </script>
 
 <style scoped>
@@ -32,6 +54,10 @@ const { tm, rt, t } = useI18n();
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+}
+
+.introduction>* {
+    opacity: 0;
 }
 
 .introduction__icon-list {

@@ -20,7 +20,29 @@
 </template>
 
 <script setup lang="ts">
-const { tm, rt, t } = useI18n()
+import gsap from 'gsap';
+
+const { tm, rt, t } = useI18n();
+
+onMounted(() => {
+    gsap.fromTo(
+        `.experience>*, .job__duties`,
+        {
+            x: -20,
+            opacity: 0,
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.05,
+            scrollTrigger: {
+                trigger: `.experience`,
+                start: "40% bottom",
+            },
+        }
+    );
+});
 </script>
 
 <style scoped>
@@ -28,6 +50,11 @@ const { tm, rt, t } = useI18n()
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+}
+
+.experience>*,
+.job__duties {
+    opacity: 0;
 }
 
 .experience__jobs {

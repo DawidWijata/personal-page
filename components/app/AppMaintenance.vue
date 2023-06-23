@@ -5,7 +5,28 @@
 </template>
 
 <script setup lang="ts">
+import gsap from 'gsap';
+
 const { t } = useI18n();
+
+onMounted(() => {
+    gsap.fromTo(
+        `section`,
+        {
+            x: -20,
+            opacity: 0,
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: `section`,
+                start: "40% bottom",
+            },
+        }
+    );
+});
 </script>
 
 <style scoped>
@@ -15,6 +36,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 
 h2 {

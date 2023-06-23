@@ -19,7 +19,29 @@
 </template>
 
 <script setup lang="ts">
+import gsap from 'gsap';
+
 const { t } = useI18n();
+
+onMounted(() => {
+    gsap.fromTo(
+        `.about-me__container *`,
+        {
+            x: -20,
+            opacity: 0,
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.3,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: `.about-me`,
+                start: "40% bottom",
+            },
+        }
+    );
+});
 </script>
 
 <style scoped>
@@ -39,6 +61,10 @@ const { t } = useI18n();
     gap: 1.5rem;
 }
 
+.about-me__container>* {
+    opacity: 0;
+}
+
 .about-me__content {
     display: flex;
     flex-direction: column;
@@ -56,8 +82,6 @@ const { t } = useI18n();
 .about-me__photo {
     width: 13rem;
     height: auto;
-
-    filter: contrast(80%);
 }
 
 .about-me__name {
