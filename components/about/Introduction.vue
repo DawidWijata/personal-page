@@ -3,11 +3,11 @@
         <h3 class="introduction__header">
             {{ t('introduction.headline') }}
         </h3>
-        <p v-for="paragraph in tm('introduction.paragraphs')">
+        <p v-for="paragraph in (tm('introduction.paragraphs') as any)">
             {{ rt(paragraph) }}
         </p>
         <ul class="introduction__icon-list">
-            <a class="introduction__social-link" v-for="socialLink in tm('introduction.socialLinks')"
+            <a class="introduction__social-link" v-for="socialLink in (tm('introduction.socialLinks') as any)"
                 :href="rt(socialLink.link)" target="_blank" ref="noreferrer nofollow">
                 <li class="introduction__icon-list-item">
                     <Icon :name="rt(socialLink.iconName)" size="2rem" />

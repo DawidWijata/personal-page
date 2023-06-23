@@ -3,7 +3,7 @@
         <h3>
             {{ t('projects.headline') }}
         </h3>
-        <UiCard v-for="project in tm('projects.items')" class="project">
+        <UiCard v-for="project in (tm('projects.items') as any)" class="project">
             <div class="project__title-row">
                 <h4>{{ rt(project.name) }}</h4>
                 <ul class="project__links">

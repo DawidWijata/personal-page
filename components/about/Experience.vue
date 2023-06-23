@@ -2,7 +2,7 @@
     <section class="experience">
         <h3>{{ t('experience.headline') }}</h3>
         <ul class="experience__jobs">
-            <li v-for="job in tm('experience.positions')" class="job">
+            <li v-for="job in (tm('experience.positions') as any)" class="job">
                 <h4>
                     {{ rt(job.position) }}
                     <span>@{{ rt(job.company) }}</span>
