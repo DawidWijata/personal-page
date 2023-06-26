@@ -30,11 +30,9 @@ export default defineNuxtConfig({
         ],
         strategy: 'prefix',
         langDir: './lang',
-        lazy: true,
         detectBrowserLanguage: {
-            useCookie: true,
-            cookieKey: 'i18n_redirected',
-            redirectOn: 'root'
+            useCookie: false,
+            alwaysRedirect: true,
         },
-    },
+    }
 })

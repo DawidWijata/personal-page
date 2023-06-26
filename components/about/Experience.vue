@@ -28,7 +28,7 @@ onMounted(() => {
     gsap.fromTo(
         `.experience>*, .job__duties`,
         {
-            x: -20,
+            x: -10,
             opacity: 0,
         },
         {
