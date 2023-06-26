@@ -3,7 +3,8 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-    title: 'Dawid Wijata | Blog',
-});
+const { t } = useI18n();
+const head = ref(t('menu.blog'))
+
+useHead({ title: head.value });
 </script>

@@ -16,19 +16,25 @@ export default defineNuxtConfig({
         defaultLocale: 'us',
         locales: [
             {
-                code: 'us',
-                iso: 'en-US',
-                file: 'us.json',
-                name: 'English'
-            },
-            {
                 code: 'pl',
                 iso: 'pl-PL',
                 file: 'pl.json',
                 name: 'Polski'
+            },
+            {
+                code: 'us',
+                iso: 'en-US',
+                file: 'us.json',
+                name: 'English',
             }
         ],
         strategy: 'prefix',
-        langDir: './lang'
+        langDir: './lang',
+        lazy: true,
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            redirectOn: 'root'
+        },
     },
 })

@@ -6,9 +6,10 @@
 </template>
  
 <script setup lang="ts">
-useHead({
-    title: 'Dawid Wijata | About',
-});
+const { t } = useI18n();
+const head = ref(t('menu[""]'))
+
+useHead({ title: head.value });
 </script>
 
 <style>

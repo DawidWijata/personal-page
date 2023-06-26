@@ -10,20 +10,22 @@
             </div>
         </div>
         <table class="data-row">
-            <tr>
-                <td><strong>NIP:</strong></td>
-                <td>8381881437</td>
-            </tr>
-            <tr>
-                <td><strong>REGON:</strong></td>
-                <td>525424156</td>
-            </tr>
-            <tr>
-                <td class="address-cell">
-                    <strong>{{ t('words.address') }}:</strong>
-                </td>
-                <td>1 Maja 54, 96-300 Żyrardów</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td><strong>NIP:</strong></td>
+                    <td>8381881437</td>
+                </tr>
+                <tr>
+                    <td><strong>REGON:</strong></td>
+                    <td>525424156</td>
+                </tr>
+                <tr>
+                    <td class="address-cell">
+                        <strong>{{ t('words.address') }}:</strong>
+                    </td>
+                    <td>1 Maja 54, 96-300 Żyrardów</td>
+                </tr>
+            </tbody>
         </table>
     </footer>
 </template>
