@@ -28,3 +28,10 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: .output/
           server-dir: public_nodejs/
+      - name: Restart the server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_SERVER }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: touch tmp/restart.txt
