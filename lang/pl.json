@@ -4,7 +4,7 @@
         "blog": "Blog"
     },
     "headline": {
-        "name": "Dawid Wijata",
+        "name": "Dawid Wijata (TEST)",
         "title": "Programista Fullstack",
         "description": "Specjalizuję się w tworzeniu aplikacji webowych przy użyciu Angulara i .NET. Lubię tworzyć rozwiązania wartościowe dla społeczeństwa. Pracowałem głównie przy projektach z branży finansowej oraz podatkowo-finansowej."
     },
@@ -60,7 +60,7 @@
                     "rozwój i utrzymanie oprogramowania do rozliczeń podatkowych oraz dostosowywanie go do najnowszych regulacji podatkowych na terenie Szwajcarii",
                     "optymalizacja czasu ładowania strony projektu w programie do rozliczania podatków o 80%",
                     "współpraca z 5-osobowym zespołem developerskim przy użyciu metodyk zwinnych",
-                    "implementacja end-to-end serwisu obsługi video KPlayer dla ponad 100 filmów wspierających procesy onboardingowe i szkoleniowe klienta",
+                    "implementacja end-to-end serwisu obsługi video MyVideo dla ponad 100 filmów wspierających procesy onboardingowe i szkoleniowe klienta",
                     "opracowanie testów jednostkowych, integracyjnych i behawioralnych, w projekcie mającym ponad 80% pokrycia kodu"
                 ]
             },
