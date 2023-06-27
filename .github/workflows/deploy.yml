@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Deploy Nuxt page to FTP
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
