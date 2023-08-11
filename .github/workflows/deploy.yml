@@ -34,4 +34,4 @@ jobs:
           host: ${{ secrets.SSH_SERVER }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: touch tmp/restart.txt
+          script: touch domains/dawidwijata.pl/public_nodejs/tmp/restart.txt

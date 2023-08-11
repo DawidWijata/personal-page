@@ -21,7 +21,7 @@ function handleValueChange(event: Event) {
 
 <style scoped>
 label {
-    width: 40px;
+    width: 25px;
     height: 30px;
     display: flex;
     flex-direction: column;
