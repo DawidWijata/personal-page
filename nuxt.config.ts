@@ -34,5 +34,8 @@ export default defineNuxtConfig({
             useCookie: false,
             alwaysRedirect: true,
         },
+    },
+    runtimeConfig: {
+        API_KEY: process.env.API_KEY,
     }
 })
