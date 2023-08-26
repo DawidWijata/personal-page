@@ -18,8 +18,8 @@
                 {{ rt(project.dateStart) }} - {{ project?.dateEnd ?? t('words.now') }}
             </p>
             <ul class="project__tags">
-                <li v-for="techItem in project.tech" class="project__tag">
-                    {{ rt(techItem) }}
+                <li v-for="techItem in project.tech">
+                    <UiBadge>{{ rt(techItem) }}</UiBadge>
                 </li>
             </ul>
             <p class="project__description">
@@ -56,15 +56,6 @@ const { tm, rt, t } = useI18n();
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-}
-
-.project__tag {
-    background-color: var(--green);
-    color: var(--primary-background-color);
-    font-weight: 500;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.5rem;
-    font-size: 0.8rem;
 }
 
 .project__description {

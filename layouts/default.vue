@@ -16,10 +16,6 @@ useHead({
     titleTemplate: title => `${title} | Dawid Wijata`,
 });
 
-definePageMeta({
-    key: (route) => (route.name as string).split("_")[0] as string,
-});
-
 onMounted(async () => {
     const value = switchLocalePath(locale.value);
     await navigateTo(value);
@@ -37,5 +33,6 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: center;
 }
 </style>

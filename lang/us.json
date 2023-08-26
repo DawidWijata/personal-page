@@ -1,161 +1,163 @@
 {
-    "menu": {
-        "": "About",
-        "blog": "Blog"
-    },
-    "headline": {
-        "name": "Dawid Wijata",
-        "title": "Fullstack Developer",
-        "description": "I'm a Fullstack Developer located in Warsaw, Poland. I specialize in developing web applications using Angular & .NET. I'm also interested in frontend architecture and microfrontends concept."
-    },
-    "introduction": {
-        "headline": "About me",
-        "paragraphs": [
-            "I'm a Fullstack Developer with 2 years in the industry, specialising in web application development using Angular and .NET. I love implementing solutions that are meaningful and bring income to others. I've already worked in 4 software development projects for automotive and financial companies.",
-            "I'm also interested in frontend architecture and microfrontends concept. I spend pretty much time on spreading these ideas among my company's tech team. It also matches with my core values which are: people, constant growth and being open for gaining knowledge."
-        ],
-        "socialLinks": [
-            {
-                "iconName": "mdi:github",
-                "link": "https://github.com/BordowyRydwan",
-                "display": "github.com/BordowyRydwan"
-            },
-            {
-                "iconName": "mdi:linkedin",
-                "link": "https://linkedin.com/in/dawid-wijata",
-                "display": "linkedin.com/in/dawid-wijata"
-            },
-            {
-                "iconName": "mdi:email",
-                "link": "mailto:contact{'@'}dawidwijata.pl",
-                "display": "contact{'@'}dawidwijata.pl"
-            },
-            {
-                "iconName": "mdi:twitter",
-                "link": "https://twitter.com/d_wijata",
-                "display": "twitter.com/d_wijata"
-            }
-        ],
-        "cvLink": "/pdf/cv_eng.pdf",
-        "cvButtonName": "Download my CV"
-    },
-    "experience": {
-        "headline": "Experience",
-        "positions": [
-            {
-                "position": "Fullstack .NET Developer",
-                "company": "mBank",
-                "yearStart": 2023,
-                "yearEnd": null,
-                "duties": [
-                    "development and maintenance of stock market management software named eMakler"
-                ]
-            },
-            {
-                "position": "Fullstack .NET Developer",
-                "company": "KPMG",
-                "yearStart": 2022,
-                "yearEnd": 2023,
-                "duties": [
-                    "developing and maintaining a tax calculation software and adjusting it to newest Swiss tax legislations",
-                    "developing 10+ new features to adjust the Swiss tax law requirements from FY 2023",
-                    "optimized the loading speed of a project page in the tax calculation software by 80%",
-                    "cooperating with a team of 5 people, sticking to Agile approach, in order to fulfill the business needs",
-                    "end-to-end implementation of MyVideo service for 100+ videos supporting the client’s onboarding and internal training processes",
-                    "implementing unit, integration and behavioral tests, leading to up to 90% code coverage"
-                ]
-            },
-            {
-                "position": "Fullstack Developer",
-                "company": "Atinea",
-                "yearStart": 2021,
-                "yearEnd": 2022,
-                "duties": [
-                    "migrating an API of enterprise application from VBA to REST-based one with ASP.NET",
-                    "designing a frontend application using micro frontends concept with Single SPA and Angular 12",
-                    "designing and developing a WPF-based guard application project for company internal code challenge",
-                    "leading a team of 2 developers during a process of implementation of a WPF-based guard application",
-                    "analyzing and planning a set of features supporting client’s company complaint management process"
-                ]
-            }
+  "menu": {
+    "": "About",
+    "blog": "Blog"
+  },
+  "headline": {
+    "name": "Dawid Wijata",
+    "title": "Fullstack Developer",
+    "description": "I'm a Fullstack Developer located in Warsaw, Poland. I specialize in developing web applications using Angular & .NET. I'm also interested in frontend architecture and microfrontends concept."
+  },
+  "introduction": {
+    "headline": "About me",
+    "paragraphs": [
+      "I'm a Fullstack Developer with 2 years in the industry, specialising in web application development using Angular and .NET. I love implementing solutions that are meaningful and bring income to others. I've already worked in 4 software development projects for automotive and financial companies.",
+      "I'm also interested in frontend architecture and microfrontends concept. I spend pretty much time on spreading these ideas among my company's tech team. It also matches with my core values which are: people, constant growth and being open for gaining knowledge."
+    ],
+    "socialLinks": [
+      {
+        "iconName": "mdi:github",
+        "link": "https://github.com/BordowyRydwan",
+        "display": "github.com/BordowyRydwan"
+      },
+      {
+        "iconName": "mdi:linkedin",
+        "link": "https://linkedin.com/in/dawid-wijata",
+        "display": "linkedin.com/in/dawid-wijata"
+      },
+      {
+        "iconName": "mdi:email",
+        "link": "mailto:contact{'@'}dawidwijata.pl",
+        "display": "contact{'@'}dawidwijata.pl"
+      },
+      {
+        "iconName": "mdi:twitter",
+        "link": "https://twitter.com/d_wijata",
+        "display": "twitter.com/d_wijata"
+      }
+    ],
+    "cvLink": "/pdf/cv_eng.pdf",
+    "cvButtonName": "Download my CV"
+  },
+  "experience": {
+    "headline": "Experience",
+    "positions": [
+      {
+        "position": "Fullstack .NET Developer",
+        "company": "mBank",
+        "yearStart": 2023,
+        "yearEnd": null,
+        "duties": [
+          "development and maintenance of stock market management software named eMakler"
         ]
-    },
-    "projects": {
-        "headline": "Projects",
-        "items": [
-            {
-                "name": "Project 1",
-                "dateStart": "01.01.2022",
-                "dateEnd": null,
-                "links": [
-                    {
-                        "icon": "mdi:github",
-                        "url": "#"
-                    },
-                    {
-                        "icon": "mdi:web",
-                        "url": "#"
-                    }
-                ],
-                "tech": [".NET", "Angular", "Single SPA", "EF Core"],
-                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
-            },
-            {
-                "name": "Project 2",
-                "dateStart": "01.01.2022",
-                "dateEnd": null,
-                "links": [
-                    {
-                        "icon": "mdi:github",
-                        "url": "#"
-                    },
-                    {
-                        "icon": "mdi:web",
-                        "url": "#"
-                    }
-                ],
-                "tech": [".NET", "Angular", "Single SPA", "EF Core"],
-                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
-            },
-            {
-                "name": "Project 3",
-                "dateStart": "01.01.2022",
-                "dateEnd": null,
-                "links": [
-                    {
-                        "icon": "mdi:github",
-                        "url": "#"
-                    },
-                    {
-                        "icon": "mdi:web",
-                        "url": "#"
-                    }
-                ],
-                "tech": [".NET", "Angular", "Single SPA", "EF Core"],
-                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
-            },
-            {
-                "name": "Project 4",
-                "dateStart": "01.01.2022",
-                "dateEnd": null,
-                "links": [
-                    {
-                        "icon": "mdi:github",
-                        "url": "#"
-                    },
-                    {
-                        "icon": "mdi:web",
-                        "url": "#"
-                    }
-                ],
-                "tech": [".NET", "Angular", "Single SPA", "EF Core"],
-                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
-            }
+      },
+      {
+        "position": "Fullstack .NET Developer",
+        "company": "KPMG",
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "duties": [
+          "developing and maintaining a tax calculation software and adjusting it to newest Swiss tax legislations",
+          "developing 10+ new features to adjust the Swiss tax law requirements from FY 2023",
+          "optimized the loading speed of a project page in the tax calculation software by 80%",
+          "cooperating with a team of 5 people, sticking to Agile approach, in order to fulfill the business needs",
+          "end-to-end implementation of MyVideo service for 100+ videos supporting the client’s onboarding and internal training processes",
+          "implementing unit, integration and behavioral tests, leading to up to 90% code coverage"
         ]
-    },
-    "words": {
-        "now": "now",
-        "underConstruction": "under construction",
-        "address": "address"
-    }
+      },
+      {
+        "position": "Fullstack Developer",
+        "company": "Atinea",
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "duties": [
+          "migrating an API of enterprise application from VBA to REST-based one with ASP.NET",
+          "designing a frontend application using micro frontends concept with Single SPA and Angular 12",
+          "designing and developing a WPF-based guard application project for company internal code challenge",
+          "leading a team of 2 developers during a process of implementation of a WPF-based guard application",
+          "analyzing and planning a set of features supporting client’s company complaint management process"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "headline": "Projects",
+    "items": [
+      {
+        "name": "Project 1",
+        "dateStart": "01.01.2022",
+        "dateEnd": null,
+        "links": [
+          {
+            "icon": "mdi:github",
+            "url": "#"
+          },
+          {
+            "icon": "mdi:web",
+            "url": "#"
+          }
+        ],
+        "tech": [".NET", "Angular", "Single SPA", "EF Core"],
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
+      },
+      {
+        "name": "Project 2",
+        "dateStart": "01.01.2022",
+        "dateEnd": null,
+        "links": [
+          {
+            "icon": "mdi:github",
+            "url": "#"
+          },
+          {
+            "icon": "mdi:web",
+            "url": "#"
+          }
+        ],
+        "tech": [".NET", "Angular", "Single SPA", "EF Core"],
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
+      },
+      {
+        "name": "Project 3",
+        "dateStart": "01.01.2022",
+        "dateEnd": null,
+        "links": [
+          {
+            "icon": "mdi:github",
+            "url": "#"
+          },
+          {
+            "icon": "mdi:web",
+            "url": "#"
+          }
+        ],
+        "tech": [".NET", "Angular", "Single SPA", "EF Core"],
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
+      },
+      {
+        "name": "Project 4",
+        "dateStart": "01.01.2022",
+        "dateEnd": null,
+        "links": [
+          {
+            "icon": "mdi:github",
+            "url": "#"
+          },
+          {
+            "icon": "mdi:web",
+            "url": "#"
+          }
+        ],
+        "tech": [".NET", "Angular", "Single SPA", "EF Core"],
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam adipisci, error nesciunt voluptatem praesentium nihil veniam dolores sint veritatis omnis repudiandae obcaecati nobis nemo odit saepe eaque magnam quidem natus."
+      }
+    ]
+  },
+  "words": {
+    "now": "now",
+    "underConstruction": "under construction",
+    "address": "address",
+    "postsLoading": "loading posts",
+    "postLoading": "loading post"
+  }
 }
