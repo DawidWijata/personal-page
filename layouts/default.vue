@@ -13,7 +13,7 @@ const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 useHead({
-    titleTemplate: title => `Dawid Wijata | ${title}`,
+    titleTemplate: title => `${title} | Dawid Wijata`,
 });
 
 definePageMeta({

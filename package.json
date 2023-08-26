@@ -18,6 +18,13 @@
     "nuxt-icon": "^0.4.1"
   },
   "dependencies": {
-    "gsap": "^3.12.1"
+    "@vrite/sdk": "^2023.7.17-beta",
+    "gsap": "^3.12.1",
+    "highlight.js": "^11.8.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
