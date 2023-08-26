@@ -24,28 +24,12 @@
 </template>
 
 <script setup lang="ts">
-import { gsap } from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const { tm, rt, t } = useI18n();
 
 onMounted(() => {
-    gsap.fromTo(
-        `.introduction > *`,
-        {
-            x: -20,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.3,
-            stagger: 0.15,
-            scrollTrigger: {
-                trigger: `.introduction`,
-                start: "40% bottom",
-            },
-        }
-    );
+    GsapHelper.fadeIn('.introduction > *', '.introduction', { stagger: 0.15 });
 });
 </script>
 

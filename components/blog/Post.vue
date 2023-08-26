@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { htmlTransformer } from '@vrite/sdk/transformers';
 import hljs from 'highlight.js';
-import gsap from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const props = defineProps({ post: Object });
 const content = computed(() => htmlTransformer(props.post?.content));
@@ -16,7 +16,7 @@ const content = computed(() => htmlTransformer(props.post?.content));
 onMounted(() => {
     document.querySelectorAll('pre:has(code)').forEach(addLanguageToCode);
     hljs.highlightAll();
-    fadeIn();
+    GsapHelper.fadeIn('section');
 });
 
 function addLanguageToCode(block: Element) {
@@ -25,25 +25,6 @@ function addLanguageToCode(block: Element) {
     const attribute = htmlElement.getAttribute('lang');
 
     code.classList.add(`language-${attribute ?? 'plaintext'}`);
-}
-
-function fadeIn() {
-    gsap.fromTo(
-        `section`,
-        {
-            x: -20,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: `section`,
-                start: "40% bottom",
-            },
-        }
-    );
 }
 </script>
 

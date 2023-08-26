@@ -20,28 +20,15 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const { tm, rt, t } = useI18n();
 
 onMounted(() => {
-    gsap.fromTo(
-        `.experience>*, .job__duties`,
-        {
-            x: -10,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.4,
-            stagger: 0.05,
-            scrollTrigger: {
-                trigger: `.experience`,
-                start: "40% bottom",
-            },
-        }
-    );
+    GsapHelper.fadeIn('.experience>*', '.experience', {
+        stagger: 0.1,
+        startX: -10,
+    });
 });
 </script>
 
@@ -52,8 +39,7 @@ onMounted(() => {
     row-gap: 2rem;
 }
 
-.experience>*,
-.job__duties {
+.experience>* {
     opacity: 0;
 }
 
