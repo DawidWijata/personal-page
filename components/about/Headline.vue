@@ -19,28 +19,12 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const { t } = useI18n();
 
 onMounted(() => {
-    gsap.fromTo(
-        `.about-me__container *`,
-        {
-            x: -20,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.3,
-            stagger: 0.1,
-            scrollTrigger: {
-                trigger: `.about-me`,
-                start: "40% bottom",
-            },
-        }
-    );
+    GsapHelper.fadeIn('.about-me__container *, .job__duties', '.about-me', { stagger: 0.1 });
 });
 </script>
 

@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const props = defineProps({ posts: Object });
 
@@ -17,22 +17,7 @@ watch(props, fadeIn);
 onMounted(fadeIn);
 
 function fadeIn() {
-    gsap.fromTo(
-        `section`,
-        {
-            x: -20,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: `section`,
-                start: "40% bottom",
-            },
-        }
-    );
+    GsapHelper.fadeIn('section');
 }
 </script>
 

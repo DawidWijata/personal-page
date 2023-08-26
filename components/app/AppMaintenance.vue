@@ -5,28 +5,11 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap';
+import { GsapHelper } from '~/utils/gsap';
 
 const { t } = useI18n();
 
-onMounted(() => {
-    gsap.fromTo(
-        `section`,
-        {
-            x: -20,
-            opacity: 0,
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: `section`,
-                start: "40% bottom",
-            },
-        }
-    );
-});
+onMounted(() => GsapHelper.fadeIn('section'));
 </script>
 
 <style scoped>
