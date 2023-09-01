@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header__container">
             <h1 class="header__headline">
-                <NuxtLink :to="localizedRoute('')">
+                <NuxtLink :to="localizedRoute('')" @click="emitRoute('')">
                     <img src="/img/logo.svg" alt="Dawid Wijata">
                 </NuxtLink>
             </h1>
@@ -11,7 +11,7 @@
                     <AppLanguageMenu />
                 </li>
                 <li class="header__main-menu-container">
-                    <AppMainMenu />
+                    <AppMainMenu @link="emitRoute" />
                 </li>
             </ul>
         </div>
@@ -20,9 +20,14 @@
 
 <script setup lang="ts">
 const { locale } = useI18n();
+const emit = defineEmits<{ (e: 'link', value: string): void }>();
 
 function localizedRoute(slug: string): string {
     return `/${locale.value}/${slug}`;
+}
+
+function emitRoute(route: string) {
+    emit('link', route);
 }
 </script>
 

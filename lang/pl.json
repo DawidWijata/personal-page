@@ -157,6 +157,11 @@
     "underConstruction": "strona w budowie",
     "address": "adres",
     "postsLoading": "ładowanie artykułów",
-    "postLoading": "ładowanie artykułu"
+    "postLoading": "ładowanie artykułu",
+    "error": "błąd"
+  },
+  "errors": {
+    "404": "Podana strona nie istnieje",
+    "404Description": "Nie udało się odnaleźć strony o podanym adresie. Sprawdź, czy adres jest poprawny i spróbuj ponownie"
   }
 }

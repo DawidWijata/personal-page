@@ -20,11 +20,26 @@ const params = computed(() => {
 
 useHead({ title: 'Blog' });
 
+const errorObjectParams = computed(() => {
+    return {
+        statusCode: 404,
+        message: t('errors.404Description'),
+        statusMessage: t('errors.404'),
+        fatal: true,
+    }
+});
+
 const apiPromise = useFetch('/api/post', { method: 'GET', query: params.value })
-    .then(({ data }) => data.value as Record<string, any>);
+    .then(({ data }) => {
+        if (!data.value) {
+            throw createError(errorObjectParams.value)
+        }
+
+        return data.value as Record<string, any>;
+    });
 
 onMounted(async () => {
-    useHead({ title: apiPromise.then(post => post.title) });
+    useHead({ title: apiPromise.then((post: any) => post.title) });
 
     await nextTick(setContentPieces);
     loading.value = false;
