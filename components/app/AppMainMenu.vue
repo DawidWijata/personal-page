@@ -2,7 +2,7 @@
     <UiMenuButton v-model="expanded" class="hamburger-button" />
     <ul>
         <li v-for="link in links" @click="close">
-            <NuxtLink :to="localizedRoute(link)">
+            <NuxtLink :to="localizedRoute(link)" @click="emitRoute(link)">
                 {{ t(`menu["${link}"]`) }}
             </NuxtLink>
         </li>
@@ -10,11 +10,11 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-const { locale } = useI18n();
-
+const { t, locale } = useI18n();
 const expanded = ref(true);
 const links = ref(['', 'blog']);
+
+const emit = defineEmits<{ (e: 'link', value: string): void }>();
 
 function close(): void {
     expanded.value = true;
@@ -22,6 +22,10 @@ function close(): void {
 
 function localizedRoute(slug: string): string {
     return `/${locale.value}/${slug}`;
+}
+
+function emitRoute(route: string) {
+    emit('link', localizedRoute(route));
 }
 </script>
 
