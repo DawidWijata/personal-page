@@ -3,6 +3,10 @@
 [![E-mail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=fafafa)](mailto:contact@dawidwijata.pl)
 [![Website link](https://img.shields.io/badge/Website-EA4335?style=for-the-badge&logo=web&logoColor=fafafa)](mailto:contact@dawidwijata.pl)
 
+---
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+---
+
 ## Setup
 
 Make sure to install the dependencies:
