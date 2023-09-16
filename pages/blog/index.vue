@@ -37,7 +37,7 @@ onMounted(async () => {
 
 async function setContentPieces() {
     const { data } = await useFetch('/api/posts', { method: 'GET', query: params.value });
-
+    console.log(data);
     contentPieces.value = data.value as Record<string, any>[];
     loading.value = false;
 }

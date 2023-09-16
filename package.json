@@ -19,7 +19,7 @@
     "nuxt-icon": "^0.4.1"
   },
   "dependencies": {
-    "@vrite/sdk": "^2023.7.17-beta",
+    "@vrite/sdk": "^0.2.0",
     "gsap": "^3.12.1",
     "highlight.js": "^11.8.0"
   },

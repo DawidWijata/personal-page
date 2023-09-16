@@ -32,7 +32,7 @@ const errorObjectParams = computed(() => {
 const apiPromise = useFetch('/api/post', { method: 'GET', query: params.value })
     .then(({ data }) => {
         if (!data.value) {
-            throw createError(errorObjectParams.value)
+            throw createError(errorObjectParams.value);
         }
 
         return data.value as Record<string, any>;

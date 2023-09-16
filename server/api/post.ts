@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     const params = {
         id: query.id!.toString(),
         content: true,
-        variant: variants.find(v => v.name === query.locale)?.id
+        variant: variants.find(v => v.key === query.locale)?.id
     };
 
     return vrite.contentPieces.get(params);

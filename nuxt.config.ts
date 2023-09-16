@@ -37,5 +37,6 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         API_KEY: process.env.API_KEY,
+        PUBLISHED_SECTION_ID: process.env.PUBLISHED_SECTION_ID,
     }
 })

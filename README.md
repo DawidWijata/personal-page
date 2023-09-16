@@ -1,9 +1,7 @@
-# Nuxt 3 Minimal Starter
----
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
----
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Personal website
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-326CE5?style=for-the-badge&logo=linkedin&logoColor=fafafa)](https://www.linkedin.com/in/dawid-wijata/?locale=en_US) 
+[![E-mail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=fafafa)](mailto:contact@dawidwijata.pl)
+[![Website link](https://img.shields.io/badge/Website-EA4335?style=for-the-badge&logo=web&logoColor=fafafa)](mailto:contact@dawidwijata.pl)
 
 ## Setup
 
@@ -42,4 +40,11 @@ Locally preview production build:
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Tech stack
+
+![Vue 3](https://img.shields.io/badge/Vue-336868?style=for-the-badge&logo=vuedotjs&logoColor=fafafa)
+![TypeScript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=fafafa)
+![Nuxt 3](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=fafafa)
+![Vrite](https://img.shields.io/badge/Vrite-DD0031?style=for-the-badge&logo=jasmine&logoColor=fafafa)
+![Node.js](https://img.shields.io/badge/Node.js-56418E?style=for-the-badge&logo=csharp&logoColor=fafafa)

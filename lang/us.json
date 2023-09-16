@@ -48,7 +48,9 @@
         "yearStart": 2023,
         "yearEnd": null,
         "duties": [
-          "development and maintenance of stock market management software named eMakler"
+          "developed and maintained the stock market management software named eMakler",
+          "cooperated with a team of 10 people, sticking to Agile approach, in order to fulfill the business needs",
+          "migrated the API layer from .NET Framework to .NET 6"
         ]
       },
       {
@@ -57,10 +59,9 @@
         "yearStart": 2022,
         "yearEnd": 2023,
         "duties": [
-          "developing and maintaining a tax calculation software and adjusting it to newest Swiss tax legislations",
-          "developing 10+ new features to adjust the Swiss tax law requirements from FY 2023",
+          "developed and maintained a tax calculation software and adjusting it to newest Swiss tax legislations",
           "optimized the loading speed of a project page in the tax calculation software by 80%",
-          "cooperating with a team of 5 people, sticking to Agile approach, in order to fulfill the business needs",
+          "developed 10+ new features to adjust the Swiss tax law requirements from FY 2023",
           "end-to-end implementation of MyVideo service for 100+ videos supporting the client’s onboarding and internal training processes",
           "implementing unit, integration and behavioral tests, leading to up to 90% code coverage"
         ]

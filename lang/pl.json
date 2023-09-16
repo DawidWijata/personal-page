@@ -48,7 +48,9 @@
         "yearStart": 2023,
         "yearEnd": null,
         "duties": [
-          "rozwój i utrzymanie oprogramowania eMakler do zarządzania instrumentami giełdowymi"
+          "rozwój i utrzymanie oprogramowania eMakler do zarządzania instrumentami giełdowymi",
+          "współpraca zespołem developerskim przy użyciu metodyki Scrum",
+          "migracja warstwy API z .NET Framework na .NET 6"
         ]
       },
       {
@@ -59,7 +61,6 @@
         "duties": [
           "rozwój i utrzymanie oprogramowania do rozliczeń podatkowych oraz dostosowywanie go do najnowszych regulacji podatkowych na terenie Szwajcarii",
           "optymalizacja czasu ładowania strony projektu w programie do rozliczania podatków o 80%",
-          "współpraca z 5-osobowym zespołem developerskim przy użyciu metodyk zwinnych",
           "implementacja end-to-end serwisu obsługi video MyVideo dla ponad 100 filmów wspierających procesy onboardingowe i szkoleniowe klienta",
           "opracowanie testów jednostkowych, integracyjnych i behawioralnych, w projekcie mającym ponad 80% pokrycia kodu"
         ]
